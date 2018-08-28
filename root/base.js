@@ -57,7 +57,7 @@ function addScript(src, type, media) {
 
     // catch errors
     element.onerror = function () {
-        const err = document.createElement('div');
+        const err = document.createElement('li');
 
         err.textContent = `- The file «${src}» has not loaded. Try reloading the page.`;
         // err.textContent = `— Файл «${src}» не загрузился. Попробуйте перезагрузить страницу.`;
