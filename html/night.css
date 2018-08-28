@@ -1,0 +1,5 @@
+body.night {
+    color: var(--night-color);
+
+    background-color: var(--night-background);
+}
