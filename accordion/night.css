@@ -1,0 +1,15 @@
+body.night .accordion__title {
+    border-top-color: var(--night-color);
+}
+
+body.night .accordion__title:first-of-type {
+    border-top-color: transparent;
+}
+
+body.night .accordion__btn {
+    outline-color: var(--night-background);
+}
+
+body.night .accordion__btn::after {
+    background-image: url("../img/row_white.svg");
+}

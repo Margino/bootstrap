@@ -1,0 +1,21 @@
+.accordion {
+    border-bottom-color: transparent;
+}
+
+.accordion > :last-child {
+    margin-bottom: 0;
+}
+
+.accordion__title {
+    border-top-color: transparent;
+}
+
+/* hide an icon */
+.accordion__btn::after {
+    display: none;
+}
+
+/* open all text blocks */
+.accordion__text {
+    display: block;
+}

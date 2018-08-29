@@ -1,0 +1,35 @@
+.accordion__btn {
+    position: relative; /* ::after */
+
+    outline: 0;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+/* icon */
+.accordion__btn::after {
+    content: "";
+    position: absolute;
+    top: var(--indent_x05);
+    right: 0;
+
+    display: block;
+    width: var(--indent);
+    height: var(--indent);
+
+    background: url("../img/row.svg") 50% 50% no-repeat;
+    background-size: var(--indent);
+
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+            transition:         transform 0.2s ease-in-out;
+}
+
+.accordion__btn[aria-expanded="true"]::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+body.tabbing .accordion__btn:focus:not([tabindex="-1"]) {
+    outline: 4px solid var(--outline);
+    outline-offset: 2px;
+}
