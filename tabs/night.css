@@ -1,0 +1,18 @@
+body.night .tabs__list,
+body.night .tabs__panel {
+    border-bottom-color: var(--night-color);
+}
+
+body.night .tabs__btn {
+    background-color: var(--night-background);
+}
+
+body.night .tabs__btn[aria-selected="true"] {
+    color: var(--night-color_light);
+
+    border-bottom-color: var(--night-color_light);
+}
+
+body.night .tabs__btn[aria-selected="false"]:hover {
+    color: var(--night-link_hover);
+}

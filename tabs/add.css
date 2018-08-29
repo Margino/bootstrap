@@ -1,0 +1,15 @@
+.tabs__panel {
+    outline: 0;
+}
+
+.tabs__btn {
+    outline: 0;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body.tabbing .tabs__btn:focus,
+body.tabbing .tabs__panel:focus {
+    outline: 4px solid var(--outline);
+    outline-offset: 2px;
+}
