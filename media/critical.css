@@ -1,7 +1,7 @@
 /* wrapper */
 .media {
     display: block;
-    margin: 0;
+    margin: 0 0 var(--indent);
     padding: 0;
 
     border: 0;
