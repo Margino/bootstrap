@@ -2,8 +2,16 @@
     float: right;
 }
 
+img.fl-r {
+    margin-left: var(--indent);
+}
+
 .fl-l {
     float: left;
+}
+
+img.fl-l {
+    margin-right: var(--indent);
 }
 
 .fl-n {
