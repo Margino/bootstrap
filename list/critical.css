@@ -34,6 +34,7 @@ ol {
     margin-right: 0;
     margin-bottom: var(--indent);
     margin-left: var(--indent);
+    padding: 0;
 
     list-style: none;
 
