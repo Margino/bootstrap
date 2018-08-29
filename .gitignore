@@ -1,2 +1,5 @@
 .DS_Store
 node_modules/
+_test/css/
+_test/img/*.svg
+_test/js/

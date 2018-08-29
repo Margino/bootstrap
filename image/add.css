@@ -9,6 +9,7 @@
     position: relative;
 
     min-height: calc(var(--indent) * 7);
+    min-width: 150px; /* ::after */
 
     background-color: white;
 }

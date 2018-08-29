@@ -1,6 +1,6 @@
 // Defer load CSS
-addScript('css/decor.min.css', 'link', 'screen');
-addScript('css/print.min.css', 'link', 'print');
+addScript('/css/decor.min.css', 'link', 'screen');
+addScript('/css/print.min.css', 'link', 'print');
 
 // Make the focus outline visible when using the tab key
 window.addEventListener('keydown', handleFirstTab);
