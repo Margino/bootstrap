@@ -1,0 +1,7 @@
+.closed {
+    display: initial;
+}
+
+.no-print {
+    display: none;
+}
