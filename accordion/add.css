@@ -17,7 +17,7 @@
     width: var(--indent);
     height: var(--indent);
 
-    background: url("../img/row.svg") 50% 50% no-repeat;
+    background: url("../img/arrow.svg") 50% 50% no-repeat;
     background-size: var(--indent);
 
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
