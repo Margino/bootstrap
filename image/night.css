@@ -1,0 +1,8 @@
+body.night .img_border {
+    box-shadow: 0 0 0 1px var(--night-color_light);
+}
+
+body.night .img::before {
+    background-color: var(--night-background_light);
+    outline-color: rgba(255, 255, 255, 0.5);
+}

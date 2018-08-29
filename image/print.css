@@ -1,0 +1,23 @@
+img {
+    max-width: 50%;
+
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: avoid;
+}
+
+/* broken images */
+.img::before,
+.img::after {
+    display: none;
+}
+
+/* hide images that depend on js  */
+img[data-layzr] {
+    display: none;
+}
+
+/* show duplicate images that depend on js */
+.img_nojs {
+    display: block !important; /* important: because of the inline style */
+}

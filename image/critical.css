@@ -1,0 +1,24 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+}
+
+/* remove a bottom padding */
+a > img {
+    vertical-align: bottom;
+}
+
+/* hide the overflow in IE */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* hide duplicate images that depend on js */
+.img_nojs {
+    display: none;
+}

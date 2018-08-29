@@ -1,0 +1,50 @@
+.img_border {
+    box-shadow: 0 0 0 1px var(--grey_light);
+}
+
+
+/* broken images https://web3r.ru/styling-broken-images */
+
+.img {
+    position: relative;
+
+    min-height: calc(var(--indent) * 7);
+
+    background-color: white;
+}
+
+.img::before {
+    content: "" !important;
+
+    height: 100%;
+
+    font-size: 0;
+
+    background-color: inherit;
+    outline: 2px rgba(255, 0, 0, 0.1) dashed;
+    outline-offset: -2px;
+}
+
+.img::before {
+    position: absolute;
+
+    display: inherit;
+    width: 100%;
+}
+
+/*  attr => data-layzr or src */
+.img::after {
+    content: "The image «"attr(src)attr(data-layzr)"» is broken. \a Alt: " attr(alt) !important;
+    position: absolute;
+    /* content: "Файл «"attr(src)attr(data-layzr)"» не загрузился. \aНа картинке: " attr(alt) !important; */
+    top: 50%;
+    white-space: pre-wrap;
+
+    display: inherit;
+    width: auto;
+    padding: 0 var(--indent);
+
+    font-size: var(--font-size_S);
+
+    transform: translateY(-50%);
+}
