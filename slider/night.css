@@ -1,0 +1,4 @@
+body.night .slider__btn {
+    background-color: rgba(0,0,0,0.3);
+    background-image: url("../img/arrow_white.svg");
+}

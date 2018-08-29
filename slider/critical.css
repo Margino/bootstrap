@@ -1,0 +1,38 @@
+.slider {
+    margin-bottom: var(--indent);
+}
+
+.slider__wrapper {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    white-space: nowrap;
+}
+
+.slider__figure {
+    display: block;
+    margin: 0 var(--indent_x05) 0 0;
+    padding: 0;
+}
+
+/* 1. long caption */
+.slider__caption {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 var(--indent);
+    overflow: hidden; /* 1 */
+
+    white-space: nowrap; /* 1 */
+    text-overflow: ellipsis;  /* 1 */
+}
+
+.slider__img {
+    max-width: none;
+}
+
+/* hide the buttons until the script isn't loaded */
+.slider__btn {
+    display: none;
+}

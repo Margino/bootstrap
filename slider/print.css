@@ -1,0 +1,47 @@
+/* !important because some style may be inlined */
+.slider {
+    position: static !important;
+
+    overflow: visible !important;
+
+    visibility: visible !important;
+}
+
+.slider__wrapper {
+    position: static !important;
+
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+
+    white-space: normal !important;
+}
+
+.slider__figure {
+    position: static !important;
+
+    display: flex !important;
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-bottom: var(--indent);
+
+    page-break-inside: avoid;
+
+    transform: none !important;
+}
+
+.slider__figure > img {
+    width: 50%;
+    height: 100%; /* otherwise, Chome shrinks the image */
+}
+
+.slider__caption {
+    width: 50%; /* otherwise, Mozila shrinks the image */
+    padding-right: 0;
+    padding-left: var(--indent_x05);
+    overflow: visible;
+
+    white-space: normal;
+}
