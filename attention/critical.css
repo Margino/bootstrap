@@ -8,8 +8,12 @@
     background-color: var(--green);
 }
 
+.attention li::before {
+    display: none;
+}
+
 .attention li {
-    list-style-position: inside;
+    list-style: inside;
 }
 
 
