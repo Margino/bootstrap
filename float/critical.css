@@ -18,6 +18,10 @@ img.fl-l {
     float: none;
 }
 
+img.fl-n {
+    margin-bottom: var(--indent);
+}
+
 /* для блока в котором есть float чтобы избежать выпадения из потока */
 .clearfix::after {
     content: "";
