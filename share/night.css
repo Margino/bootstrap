@@ -1,0 +1,23 @@
+body.night .share__btn {
+    outline-color: var(--night-background);
+}
+
+body.night .share__btn_fb::before {
+    background-image: url("../img/fb_white.svg");
+}
+
+body.night .share__btn_vk::before {
+    background-image: url("../img/vk_white.svg");
+}
+
+body.night .share__btn_tw::before {
+    background-image: url("../img/tw_white.svg");
+}
+
+body.night .share__btn_mail::before {
+    background-image: url("../img/mail_white.svg");
+}
+
+body.night .share__btn_print::before {
+    background-image: url("../img/print_white.svg");
+}

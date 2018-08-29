@@ -1,0 +1,102 @@
+.share {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    text-align: right;
+}
+
+.share__item {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    vertical-align: top; /* vertical rhythm for links */
+}
+
+.share__item::before {
+    display: none;
+}
+
+.share__btn {
+    position: relative;
+
+    display: block;
+    width: var(--indent);
+    height: var(--indent);
+    margin: 0 var(--indent_x05) 0 0;
+    padding: 0;
+    overflow: hidden;
+
+    font-size: var(--font-size_SX);
+    line-height: var(--indent);
+    color: transparent !important;
+    text-decoration: none; /* can be a link */
+    text-indent: -9999px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.share__btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    display: block;
+    width: var(--indent);
+    height: var(--indent);
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.4;
+
+    transition: opacity 0.3s;
+}
+
+.share__btn:hover::before {
+    opacity: 0.8;
+}
+
+.share__btn_print::before {
+    background-image: url("../img/print.svg");
+}
+
+.share__btn_vk::before {
+    background-image: url("../img/vk.svg");
+    background-size: var(--indent);
+}
+
+.share__btn_fb::before {
+    background-image: url("../img/fb.svg");
+}
+
+.share__btn_tw::before {
+    background-image: url("../img/tw.svg");
+}
+
+.share__btn_mail::before {
+    background-image: url("../img/mail.svg");
+}
+
+body.tabbing .share__btn:focus {
+    text-decoration: none;
+
+    outline: 4px solid var(--outline);
+    outline-offset: 2px;
+}
+
+
+
+@media screen and (min-width: 860px) {
+    .share {
+        text-align: left;
+    }
+    .share__btn {
+        margin-bottom: var(--indent_x05);
+    }
+}
