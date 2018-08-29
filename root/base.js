@@ -59,7 +59,7 @@ function addScript(src, type, media) {
     element.onerror = function () {
         const err = document.createElement('li');
 
-        err.textContent = `- The file «${src}» has not loaded. Try reloading the page.`;
+        err.textContent = `- The file «${src}» has not been loaded. Try reloading the page.`;
         // err.textContent = `— Файл «${src}» не загрузился. Попробуйте перезагрузить страницу.`;
 
         if (document.querySelector('#attention')) {
