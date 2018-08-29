@@ -1,0 +1,9 @@
+/* wrapper */
+.media {
+    text-align: center;
+}
+
+/* iframe */
+.media__obj {
+    box-shadow: 0 0 0 1px var(--grey_light);
+}

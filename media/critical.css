@@ -1,0 +1,20 @@
+/* wrapper */
+.media {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+}
+
+/* iframe */
+.media__obj {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+
+    vertical-align: top;
+
+    border: 0;
+}
