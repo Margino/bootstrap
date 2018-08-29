@@ -1,0 +1,56 @@
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+caption {
+    margin: 0;
+    padding: 0;
+
+    vertical-align: top;
+    text-align: left;
+
+    border: 0;
+}
+
+/* 1. if a table is bigger than a content block */
+table {
+    display: inline-block; /* 1 */
+    width: 100%;
+    max-width: 100%; /* 1 */
+    margin-bottom: var(--indent);
+    overflow-x: auto; /* 1 */
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    white-space: nowrap; /* 1 */
+}
+
+caption {
+    margin-bottom: var(--indent);
+    padding-top: var(--indent);
+
+    caption-side: top; /* position */
+    font-weight: bold;
+    font-size: var(--font-size_XL);
+}
+
+th,
+td {
+    font-size: var(--font-size_S);
+}
+
+thead th {
+    padding-top: var(--indent_x05);
+    padding-right: var(--indent_x05);
+    padding-bottom: calc(var(--indent_x05) - 1px);
+    padding-left: var(--indent_x05);
+
+    border-bottom: 1px solid var(--grey);
+}
+
+td {
+    padding: var(--indent_x05);
+}

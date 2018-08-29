@@ -1,0 +1,24 @@
+body.night thead th {
+    border-bottom-color: var(--night-color);
+}
+
+body.night table[tabindex="0"] {
+    outline-color: var(--night-background);
+}
+
+body.night tbody tr {
+    outline-color: var(--night-background);
+}
+
+body.night tbody tr:hover {
+    outline-color: rgba(244, 143, 177, 0.5);
+}
+
+body.night .tbl,
+body.night .tbl caption,
+body.night .tbl th:first-child,
+body.night .tbl td:first-child,
+body.night .tbl th:last-child,
+body.night .tbl td:last-child {
+    background: none;
+}

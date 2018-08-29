@@ -1,0 +1,12 @@
+table {
+    page-break-inside: avoid;
+}
+
+body.night .tbl,
+body.night .tbl caption,
+body.night .tbl th:first-child,
+body.night .tbl td:first-child,
+body.night .tbl th:last-child,
+body.night .tbl td:last-child {
+    background: none;
+}

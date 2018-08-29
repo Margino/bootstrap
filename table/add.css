@@ -1,0 +1,60 @@
+caption {
+    -webkit-font-smoothing: antialiased;
+}
+
+thead th {
+    font-weight: bold;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+tbody tr:hover {
+    outline: 2px rgba(255,0,0,0.1) dashed;
+    outline-offset: -3px;
+}
+
+body.tabbing table[tabindex="0"]:focus {
+    outline: 4px solid var(--outline);
+    outline-offset: 2px;
+}
+
+
+.tbl {
+    width: auto; /* otherwise, the background can be seen if a table is less than a content block */
+
+    background: -webkit-radial-gradient(left ellipse, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 75%) 0 center, -webkit-radial-gradient(right ellipse, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 75%) 100% center;
+    background:         radial-gradient(ellipse at left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 75%) 0 center, radial-gradient(ellipse at right, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 75%) 100% center;
+    background-repeat: no-repeat;
+    background-size: 10px 100%, 10px 100%;
+    background-attachment: scroll, scroll;
+}
+
+.tbl th:first-child,
+.tbl td:first-child {
+    background-image: -webkit-linear-gradient(left, #ffffff 50%, rgba(255,255,255,0) 100%);
+    background-image:         linear-gradient(to right, #ffffff 50%, rgba(255,255,255,0) 100%);
+    background-repeat: no-repeat;
+    background-size: 20px 100%;
+}
+
+.tbl th:last-child,
+.tbl td:last-child {
+    background-image: -webkit-linear-gradient(right, #ffffff 50%, rgba(255,255,255,0) 100%);
+    background-image:         linear-gradient(to left, #ffffff 50%, rgba(255,255,255,0) 100%);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 20px 100%;
+}
+
+/* 1. otherwise, the background in a caption can be seen */
+.tbl caption {
+    margin-bottom: 0; /* 1 */
+    padding-bottom: var(--indent); /* 1 */
+
+    background-image: -webkit-linear-gradient(left, #ffffff 50%, rgba(255,255,255,0) 100%), -webkit-linear-gradient(right, #ffffff 50%, rgba(255,255,255,0) 100%);
+    background-image:         linear-gradient(to right, #ffffff 50%, rgba(255,255,255,0) 100%), linear-gradient(to left, #ffffff 50%, rgba(255,255,255,0) 100%);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-position: 0 0, 100% 0;
+    background-size: 20px 100%;
+}
