@@ -1,0 +1,27 @@
+blockquote,
+q {
+    display: block;
+    margin: 0 0 var(--indent);
+    padding: 0 0 0 calc(var(--indent) - 4px);
+
+    font-size: var(--font-size_S);
+
+    border-left: 4px solid var(--grey);
+
+    quotes: none;
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+cite {
+    font-size: var(--font-size_S);
+    vertical-align: top; /* vertical rhythm */
+}
+
+@media (min-width: 860px) {
+    blockquote {
+        padding-left: calc(var(--indent_x2) - 4px);
+    }
+}
