@@ -89,14 +89,3 @@ body.tabbing .share__btn:focus {
     outline: 4px solid var(--outline);
     outline-offset: 2px;
 }
-
-
-
-@media screen and (min-width: 860px) {
-    .share {
-        text-align: left;
-    }
-    .share__btn {
-        margin-bottom: var(--indent_x05);
-    }
-}
