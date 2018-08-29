@@ -1,0 +1,11 @@
+a {
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--link_visited);
+}
+
+a:hover {
+    color: var(--red);
+}

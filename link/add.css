@@ -1,0 +1,16 @@
+a {
+    text-decoration: underline;
+
+    outline: 0;
+
+    transition: color 0.3s;
+
+    text-decoration-skip: ink;
+}
+
+body.tabbing a:focus:not([tabindex="-1"]) {
+    text-decoration: none;
+
+    outline: 4px solid var(--outline);
+    outline-offset: 2px;
+}

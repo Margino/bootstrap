@@ -1,0 +1,11 @@
+body.night a {
+    color: var(--night-link);
+}
+
+body.night a:visited {
+    color: var(--night-link_visited);
+}
+
+body.night a:hover {
+    color: var(--night-link_hover);
+}
