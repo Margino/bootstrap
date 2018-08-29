@@ -5,6 +5,8 @@
 .tabs__btn {
     outline: 0;
 
+    transition: color 0.3s;
+
     -webkit-font-smoothing: antialiased;
 }
 
