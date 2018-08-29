@@ -1,0 +1,6 @@
+body.night .skiplink:active,
+body.night .skiplink:focus {
+    color: #000000 !important;
+
+    background: #ffffff;
+}
