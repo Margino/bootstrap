@@ -1,0 +1,19 @@
+.fl-r {
+    float: right;
+}
+
+.fl-l {
+    float: left;
+}
+
+.fl-n {
+    float: none;
+}
+
+/* для блока в котором есть float чтобы избежать выпадения из потока */
+.clearfix::after {
+    content: "";
+
+    display: block;
+    clear: both;
+}
