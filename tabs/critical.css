@@ -6,7 +6,7 @@
 .tabs__list {
     margin-bottom: calc(var(--indent) - 1px);
 
-    border-bottom: 1px solid var(--grey-lighter);
+    border-bottom: 1px solid var(--grey_light);
 }
 
 .tabs__panel {
