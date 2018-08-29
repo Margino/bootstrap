@@ -1,0 +1,36 @@
+strong,
+b {
+    font-weight: bold;
+    vertical-align: top; /* vertical rhythm */
+}
+
+small {
+    font-size: var(--font-size_S);
+}
+
+sup {
+    font-size: 50%;
+    line-height: 0;
+}
+
+sub {
+    font-size: 50%;
+    line-height: 0;
+}
+
+mark {
+    padding: 0.2em;
+}
+
+hr {
+    display: block;
+    height: 0;
+    margin-top: var(--indent);
+    margin-right: 0;
+    margin-bottom: calc(var(--indent) - 1px);
+    margin-left: 0;
+    padding: 0;
+
+    border: 0;
+    border-top: 1px solid var(--grey_light);
+}

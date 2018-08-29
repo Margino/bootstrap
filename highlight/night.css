@@ -1,0 +1,4 @@
+body.night strong,
+body.night b {
+    color: var(--night-color_light);
+}
