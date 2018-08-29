@@ -1,0 +1,17 @@
+.figure {
+    margin: 0 0 var(--indent);
+    padding: 0;
+}
+
+.figure > img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.figcaption {
+    margin: 0;
+    padding: 0;
+
+    font-size: var(--font-size_S);
+    text-align: center;
+}
