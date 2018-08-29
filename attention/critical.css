@@ -1,0 +1,18 @@
+.attention {
+    display: none;
+    margin: 0;
+    padding: var(--indent);
+
+    color: white;
+
+    background-color: var(--green);
+}
+
+.attention li {
+    list-style-position: inside;
+}
+
+
+.attention li + li {
+    padding-top: var(--indent_x05);
+}

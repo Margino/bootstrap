@@ -1,0 +1,15 @@
+.attention {
+    padding: var(--indent);
+    padding-bottom: calc(var(--indent) - 1px);
+
+    font-family: var(--monospace);
+    color: var(--black);
+
+    background: #ffffff;
+    border-bottom: 1px solid var(--black);
+}
+
+/* скрываем блоки используемые только с JavaScript */
+.js {
+    display: none;
+}

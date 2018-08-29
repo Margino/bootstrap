@@ -1,0 +1,5 @@
+body.night .attention {
+    padding-bottom: calc(var(--indent) - 1px);
+
+    border-bottom: 1px solid #ffffff;
+}

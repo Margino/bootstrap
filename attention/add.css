@@ -1,0 +1,18 @@
+.attention {
+    font-family: var(--monospace);
+}
+
+.attention a {
+    color: #ffffff !important;
+}
+
+@media (min-width: 700px) {
+    .attention {
+        padding-left: var(--indent_x3);
+
+        background-image: url("../img/alert_white.svg");
+        background-repeat: no-repeat;
+        background-position: var(--indent) 50%;
+        background-size: var(--indent);
+    }
+}
