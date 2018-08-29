@@ -62,10 +62,12 @@ function addScript(src, type, media) {
         err.textContent = `- The file «${src}» has not loaded. Try reloading the page.`;
         // err.textContent = `— Файл «${src}» не загрузился. Попробуйте перезагрузить страницу.`;
 
-        document.querySelector('#attention').appendChild(err);
+        if (document.querySelector('#attention')) {
+            document.querySelector('#attention').appendChild(err);
 
-        // Show the error block which is hidden in CSS by default
-        document.querySelector('#attention').style.display = 'block';
+            // Show the error block which is hidden in CSS by default
+            document.querySelector('#attention').style.display = 'block';
+        }
     }
 }
 
