@@ -1,0 +1,25 @@
+.tx-r {
+    text-align: right;
+}
+
+.tx-l {
+    text-align: left;
+}
+
+.tx-c {
+    text-align: center;
+}
+
+.tx-j {
+    text-align: justify;
+}
+
+.tx-nowrap {
+    white-space: nowrap;
+}
+
+.tx-wrap {
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+            hyphens: auto;
+}
