@@ -1,5 +1,5 @@
 // Switch the site theme
-if (document.querySelector('#toggleTheme')) {
+if (document.querySelector('#colorScheme')) {
 
     // if localStorage is suppored
     if (window.localStorage) {
@@ -9,7 +9,7 @@ if (document.querySelector('#toggleTheme')) {
             document.body.classList.add('night');
         }
 
-        document.querySelector('#toggleTheme').addEventListener('click', () => {
+        document.querySelector('#colorScheme').addEventListener('click', () => {
             if (document.body.classList.contains('night')) {
                 document.body.classList.remove('night');
                     localStorage.removeItem('colorScheme');
@@ -19,7 +19,7 @@ if (document.querySelector('#toggleTheme')) {
             }
         });
     } else {
-        document.querySelector('#toggleTheme').addEventListener('click', () => {
+        document.querySelector('#colorScheme').addEventListener('click', () => {
             document.body.classList.toggle('night');
         });
     }
