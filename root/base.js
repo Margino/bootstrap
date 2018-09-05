@@ -8,13 +8,6 @@ window.addEventListener('keydown', handleFirstTab);
 // Feedback
 console.warn('%c%s', 'font-weight: bold', 'Find a bug? Please let me know https://github.com/Margino/report-bugs');
 
-// Switch the site theme
-if (document.querySelector('#toggleTheme')) {
-    document.querySelector('#toggleTheme').addEventListener('click', () => {
-        document.body.classList.toggle('night');
-    });
-}
-
 
 // ========== Functions ========== //
 
