@@ -36,7 +36,6 @@
     background-color: transparent;
     background-image: none;
     border: 0;
-    outline-color: #ffffff; /* для плавного появления при tab */
     cursor: pointer;
 }
 
