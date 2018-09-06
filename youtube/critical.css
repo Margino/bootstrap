@@ -1,4 +1,3 @@
-
 /* https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743  */
 
 .youtube {
@@ -16,6 +15,8 @@
     top: 50%;
     left: 50%;
     z-index: 1;
+
+    display: block;
 
     -webkit-transform: translate3d( -50%, -50%, 0 );
             transform: translate3d( -50%, -50%, 0 );
