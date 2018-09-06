@@ -1,0 +1,47 @@
+:root {
+    position: relative;
+
+    min-height: 100%;
+}
+
+:root::before {
+    content: "";
+    position: absolute;
+    z-index: 99;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.3), transparent 1px) 0 0 / 100% var(--indent);
+
+    pointer-events: none;
+}
+
+.rhythm {
+    position: relative;
+
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.rhythm::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 99;
+
+    width: 100%;
+    height: 100%;
+
+    background: repeating-linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.1) var(--indent_x05), transparent var(--indent_x05), transparent calc(var(--indent_x25) + var(--indent)));
+    /* background-position: var(--indent_x05) 0; */
+
+    pointer-events: none;
+}
+
+/* @media (min-width: 860px) {
+    .rhythm::before {
+        left: calc(0px - var(--indent_x05));
+        background-position: 0;
+    }
+} */
