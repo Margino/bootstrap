@@ -1,0 +1,3 @@
+body.night .youtube {
+    box-shadow: 0 0 0 1px var(--night-color_light);
+}

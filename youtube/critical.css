@@ -1,0 +1,22 @@
+
+/* https://webdesign.tutsplus.com/tutorials/how-to-lazy-load-embedded-youtube-videos--cms-26743  */
+
+.youtube {
+    position: relative;
+
+    margin-bottom: var(--indent);
+    padding-top: 56.25%;
+    overflow: hidden;
+
+    background-color: var(--black);
+}
+
+.youtube__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    -webkit-transform: translate3d( -50%, -50%, 0 );
+            transform: translate3d( -50%, -50%, 0 );
+}

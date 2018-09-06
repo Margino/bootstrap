@@ -1,0 +1,62 @@
+.youtube__btn {
+    display: block;
+    width: var(--indent_x25);
+    height: var(--indent_x15);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    text-indent: -9999px;
+
+    background-color: #333333;
+    background-image: none;
+    border: 0;
+    border-radius: 6px;
+    outline: 0;
+    box-shadow: 0 0 var(--indent) rgba( 0,0,0,0.6 );
+    cursor: pointer;
+    opacity: 0.8;
+
+    transition: background-color 0.3s;
+}
+
+.youtube__btn:hover {
+    background: #ff0000;
+}
+
+body.tabbing .youtube__btn:focus:not([tabindex="-1"]) {
+    outline: 4px solid var(--outline);
+    outline-offset: 2px;
+}
+
+.youtube__btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    border-width: 12px 0 12px 24px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffffff;
+    -webkit-transform: translate3d( -50%, -50%, 0 );
+            transform: translate3d( -50%, -50%, 0 );
+}
+
+.youtube img {
+    position: absolute;
+    top: -16.84%;
+    left: 0;
+
+    width: 100%;
+
+    opacity: 0.7;
+}
+
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
