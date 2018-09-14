@@ -1,27 +1,23 @@
 'use strict'
 
 const gulp = require('gulp');
-const concat = require('gulp-concat'); // объединение файлов
-const uglify = require('gulp-uglify'); // минификатор js
-const rename  = require('gulp-rename'); // переименование, добавление суффикосов
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const rename  = require('gulp-rename');
 const postcss = require('gulp-postcss');
-const csso = require('postcss-csso'); // минификатор css
-const cssmqpacker = require('css-mqpacker'); // объединение и сортировка @media
-/* для css var https://github.com/postcss/postcss-custom-properties */
+const csso = require('postcss-csso');
+const cssmqpacker = require('css-mqpacker');
 const customProperties = require('postcss-custom-properties');
-/* для calc https://github.com/postcss/postcss-calc */
 const calc = require('postcss-calc');
 const browserSync = require('browser-sync').create();
 const babel = require('gulp-babel');
 const remove = require('gulp-remove-files');
 
-// пути к файлам
 const path = {
   js:  ['./**/*.js', '!./node_modules/**', '!./_test/**', '!./gulpfile.js'],
   css: ['./**/*.css', '!./node_modules/**', '!./_test/**']
 };
 
-// плагины postcss
 const postCssPlugins = [
     customProperties({
         preserve: false
@@ -169,7 +165,6 @@ gulp.task('serv', function() {
 });
 
 
-// следим за изменением файлов
 gulp.task('watch', function() {
     gulp.watch(path.css, ['css','css:add','css:print','serv']);
     gulp.watch(path.js, ['js','js:lazy','serv']);
