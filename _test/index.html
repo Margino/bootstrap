@@ -20,14 +20,14 @@
 
 
 </head>
-<body>
+<body class="rhythm">
 
     <style>
         /* .attention{display:block} */
         .wrap {
-            padding: 28px 14px;
+            /* padding: 28px 14px; */
             /* max-width: 896px; */
-            max-width: 686px;
+            /* max-width: 686px; */
         }
     </style>
 
@@ -37,277 +37,310 @@
 
     <a class="skiplink" href="#content">Skip to main content</a>
 
-    <div class="wrap rhythm">
+    <div class="wrap">
 
-        <p><button type="button" id="colorScheme">Toggle site's theme</button></p>
+        <div class="devPanel">
+            <button class="devPanel__btn" type="button" id="hRhythm">H-rhythm</button>, <button class="devPanel__btn" type="button" id="vRhythm">V-rhythm</button>, <button class="devPanel__btn" type="button" id="colorScheme">Theme</button>, <a class="devPanel__lk" href="#content">Nav</a>
+        </div>
 
-        <h1 id="content">Test Core Components</h1>
+        <section class="dev">
 
-        <h2>Paragraph</h2>
+            <h1 id="content">Core Components</h1>
+            <ul>
+                <li><a href="#p">Paragraph</a></li>
+                <li><a href="#lk">Link</a></li>
+                <li><a href="#hl">List, Highlight</a></li>
+                <li><a href="#bq">Blockquote</a></li>
+                <li><a href="#tbl">Table</a></li>
+                <li><a href="#sh">Share</a></li>
+                <li><a href="#ac">Accordion</a></li>
+                <li><a href="#tb">Tabs</a></li>
+                <li><a href="#sl">Slider</a></li>
+                <li><a href="#im">Images, figure, float</a></li>
+                <li><a href="#you">Media</a></li>
+            </ul>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat est nostrum, adipisci optio ex excepturi sint blanditiis itaque sequi earum veniam nisi unde quidem iusto iste ad porro consequuntur? Totam!</p>
-        <p>Debitis quaerat, laborum autem asperiores, reprehenderit enim necessitatibus mollitia, nesciunt aspernatur, sunt similique. Vero eaque sint, expedita accusantium animi ratione impedit. Consectetur, provident nihil. Odit officiis distinctio iure fugit, nobis.</p>
+        </section>
+
+        <section class="dev" id="p">
+
+            <h2>Paragraph</h2>
+
+            <p>The HTML "p" element represents a paragraph of text. Paragraphs are usually represented in visual media as blocks of text that are separated from adjacent blocks by vertical blank space and/or first-line indentation. Paragraphs are block-level elements.</p>
+            <p>The start tag is required. The end tag may be omitted if the "p" element is immediately followed by an: address, article, aside, blockquote, div, dl, fieldset, footer, form, h1, h2, h3, h4, h5, h6, header, hr, menu, nav, ol, pre, section, table, ul, or another "p" element, or if there is no more content in the parent element and the parent element is not an "a" element.</p>
+            <p>Permitted ARIA roles: any.</p>
+            <p>Source: <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/p">MDN</a></p>
+
+        </section>
+
+        <section class="dev" id="lk">
+
+            <h2>Links</h2>
+            <p>The HTML "a" element (or anchor element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.</p>
+            <p>Tag omission: none, both the starting and ending tag are mandatory.</p>
+            <p>Note: When using target, consider adding rel="noopener noreferrer" to avoid exploitation of the window.opener API.</p>
+            <p>Emaxple: this is <a href="?link">a link</a>, this is a <a href="#">visited link</a>.</p>
+
+        </section>
+
+        <section class="dev" id="hl">
 
 
-        <h2>Links</h2>
-        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <a href="#?">voluptate velit esse cillum</a> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>List, Highlight</h2>
 
-        <h2>Highlight</h2>
+            <p>The HTML "<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">ul</a>" element represents an unordered list of items, typically rendered as a bulleted list.</p>
 
-        <ul>
-            <li><strong>Stong:</strong> Voluptatum nemo <strong>similique consectetur</strong> accusantium</li>
-            <li><strong>Mark:</strong> aut <mark>sint sapiente iusto nam enim nemo</mark></li>
-            <li><strong>Em:</strong> amet, <em>consectetur</em> adipisicing</li>
-            <li><strong>Small: </strong> ab <small>ratione numquam</small> aliquid</li>
-            <li><strong>Sup:</strong> obcaecati<sup>1</sup> numquam</li>
-            <li><strong>Sub:</strong> sapiente<sub>2</sub> aspernatur</li>
-            <li><strong>Abbr:</strong> <abbr title="CSS">CSS</abbr></li>
-            <li><strong></strong></li>
-            <li><strong>hr: </strong></li>
-        </ul>
+            <ul>
+                <li>The HTML Strong Importance Element ("<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">strong</a>") indicates that its contents have <strong>strong importance</strong>, seriousness, or urgency. Browsers typically render the contents in bold type.</li>
+                <li>The HTML Mark Text element ("<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">mark</a>") represents <mark>text which is marked or highlighted</mark> for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.</li>
+                <li>The HTML "<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">em</a>" element marks <em>text that has stress emphasis</em>. The "em" element can be nested, with each level of nesting indicating a greater degree of emphasis.</li>
+                <li>The HTML "<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small">small</a>" element makes the <small>text font size one size smaller</small> (for example, from large to medium, or from small to x-small) down to the browser's minimum font size.  In HTML5, this element is repurposed to represent side-comments and small print, including copyright and legal text, independent of its styled presentation.</li>
+            </ul>
 
-        <hr>
-        <p>Totam dolorem aut sint sapiente iusto nam enim nemo, facilis a, natus consectetur ad quam, ipsa. Iste delectus doloribus obcaecati eum consectetur autem vel et, aspernatur rerum, aliquid, harum necessitatibus.</p>
+            <p>The HTML "<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">ol</a>" element represents an ordered list of items, typically rendered as a numbered list.</p>
+
+            <ol>
+                <li>The HTML Superscript element ("<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup">sup</a>") specifies inline text<sup>1</sup> which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text.</li>
+                <li>The HTML Abbreviation element ("<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">abbr</a>") represents an abbreviation or <abbr title="some text">acronym</abbr>; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else.</li>
+                <li>The HTML "<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr">hr</a>" element represents a thematic break between paragraph-level elements (for example, a change of scene in a story, or a shift of topic with a section); historically, this has been presented as a horizontal rule or line. While it may still be displayed as a horizontal rule in visual browsers, this element is now defined in semantic terms, rather than presentational terms, so if you wish to draw a horizontal line, you should do so using appropriate CSS.</li>
+            </ol>
+            <hr>
 
 
-        <h2>Blockquote</h2>
+        </section>
 
-        <p>Totam dolorem aut sint sapiente iusto nam enim nemo, facilis a, natus consectetur ad quam, ipsa.</p>
+        <section class="dev" id="bq">
 
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quos, commodi, iusto ratione nihil saepe reiciendis veritatis doloremque ducimus fuga impedit, quisquam magni quasi, similique. Voluptate reiciendis labore consequuntur, repellat.</p>
+            <h2>Blockquote</h2>
+
+
+            <blockquote>
+                <p>The HTML "blockquote" Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the "cite" element.</p>
+                <cite>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">MDN</a></cite>
+            </blockquote>
+
+        </section>
+
+        <section class="dev" id="tbl">
+
+            <h2>Table</h2>
+
+            <table class="tbl" tabindex="0">
+                <caption>Employees</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">First name</th>
+                        <th scope="col">Second name</th>
+                        <th class="tx-r" scope="col">Age</th>
+                        <th scope="col">Job</th>
+                        <th scope="col">Email</th>
+                        <th class="tx-r" scope="col">Salary</th>
+                        <th scope="col">State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alex</td>
+                        <td>Olshakov</td>
+                        <td class="tx-r">23</td>
+                        <td>Clerk</td>
+                        <td>a@gmail.com</td>
+                        <td class="tx-r">52000</td>
+                        <td>Ohio</td>
+                    </tr>
+                    <tr>
+                        <td>Ivan</td>
+                        <td>Kine</td>
+                        <td class="tx-r">80</td>
+                        <td>Clerk</td>
+                        <td>i@gmail.com</td>
+                        <td class="tx-r">49000</td>
+                        <td>Ohio</td>
+                    </tr>
+                    <tr>
+                        <td>Oleg</td>
+                        <td>Shekin</td>
+                        <td class="tx-r">65</td>
+                        <td>Clerk</td>
+                        <td>o@gmail.com</td>
+                        <td class="tx-r">51000</td>
+                        <td>Ohio</td>
+                    </tr>
+                    <tr>
+                        <td>Tem</td>
+                        <td>Forki</td>
+                        <td class="tx-r">45</td>
+                        <td>Clerk</td>
+                        <td>t@gmail.com</td>
+                        <td class="tx-r">50000</td>
+                        <td>Ohio</td>
+                    </tr>
+                    <tr>
+                        <td>Mikle</td>
+                        <td>Petro</td>
+                        <td class="tx-r">50</td>
+                        <td>Clerk</td>
+                        <td>m@gmail.com</td>
+                        <td class="tx-r">48000</td>
+                        <td>Ohio</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section class="dev" id="sh">
+
+            <h2>Share</h2>
+
+            <ul class="share">
+                <li class="share__item">
+                    <button class="share__btn share__btn_js share__btn_vk" type="button" id="shareVk">Share on VK.com</button>
+                </li>
+                <li class="share__item">
+                    <button class="share__btn share__btn_js share__btn_fb" type="button" id="shareFb">Share on Facebook</button>
+                </li>
+                <li class="share__item">
+                    <button class="share__btn share__btn_js share__btn_tw" type="button" id="shareTw">Share on Twitter</button>
+                </li>
+                <li class="share__item">
+                    <button class="share__btn  share__btn_print" type="button" onclick="window.print();">Print the page</button>
+                </li>
+                <li class="share__item">
+                    <a href="mailto:?subject= &amp;body= " class="share__btn share__btn_mail">send a link to an email</a>
+                </li>
+            </ul><!-- end .share -->
+
+        </section>
+
+        <section class="dev" id="ac">
+
+            <h2>Accordion</h2>
+
+            <dl class="accordion">
+
+                <dt class="accordion__title">
+                    <button class="accordion__btn" aria-expanded="true" aria-controls="faq1" type="button">What do I do if I have a permit for…</button>
+                </dt>
+                <dd id="faq1" class="accordion__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </dd>
+
+                <dt class="accordion__title">
+                    <button class="accordion__btn" aria-expanded="false" aria-controls="faq2" type="button">Lorem ipsum dolor sit amet, consectetur</button>
+                </dt>
+                <dd id="faq2" class="accordion__text closed">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </dd>
+
+            </dl>
+
+        </section>
+
+        <section class="dev" id="tb">
+
+            <h2>Tabs</h2>
+
+            <div class="tabs js">
+
+                <div class="tabs__list js" role="tablist" aria-label="Examples">
+
+                    <button class="tabs__btn" role="tab" aria-selected="true" aria-controls="first-tab" id="first" type="button">First tab</button>
+
+                    <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="second-tab" id="second" type="button" tabindex="-1">Second tab</button>
+
+                </div><!-- end .tabs__list -->
+
+
+                <div class="tabs__panel" role="tabpanel" aria-labelledby="first" id="first-tab" tabindex="0">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, animi, unde. Earum, in distinctio doloremque, maiores optio dolorem, veniam voluptatum hic culpa non harum quibusdam. Deleniti adipisci laudantium aut voluptatum.</p>
+                    <p>Eaque officia temporibus iusto illum, maiores quo. At natus assumenda error voluptas saepe, obcaecati architecto eos modi illo eius ea omnis fuga culpa dicta animi, quae perspiciatis aspernatur eaque odit.</p>
+                </div>
+
+                <div class="tabs__panel" role="tabpanel" aria-labelledby="second" id="second-tab" tabindex="0" hidden>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptate sit odit beatae saepe natus excepturi! Eveniet repellendus non accusantium quo, saepe eaque quis ex impedit quasi, veniam, maxime fugit.</p>
+                    <p>Adipisci labore obcaecati pariatur inventore sint ipsum deleniti, culpa similique, magnam excepturi accusantium odit vel consequatur voluptates ipsam, nulla eaque nihil alias optio, nemo assumenda quam dignissimos quos? Esse, ea.</p>
+                    <p>Reiciendis, eius perferendis ipsa deleniti, facilis minima totam voluptas fugit fugiat eveniet recusandae dolor explicabo, repudiandae nihil nemo. Autem sapiente, commodi doloremque ipsam doloribus tempora non voluptas neque consequuntur excepturi.</p>
+                </div>
+
+            </div><!-- end .tabs -->
+        </section>
+
+        <section class="dev" id="he">
+            <h2>Header 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quisquam ipsam beatae maiores et! Tenetur soluta eum, doloremque a. Voluptate iste ipsum reprehenderit cum quo, inventore perspiciatis aliquid fugiat amet?</p>
+            <h3>Header 3</h3>
+            <p>Quis repellat cumque iste molestiae dolorum, quibusdam omnis necessitatibus, quo, hic, veritatis delectus obcaecati deserunt ratione ad voluptas error numquam esse ipsa dolorem magnam minus ab aliquid veniam placeat. Eos.</p>
+            <h4>Header 4</h4>
+            <p>Ratione, libero dolorum commodi mollitia praesentium odit accusamus, incidunt ducimus a nam cupiditate? Ratione nemo culpa nostrum debitis ullam cupiditate placeat blanditiis totam earum tenetur, possimus est nobis sint rem.</p>
+            <h5>Header 5</h5>
+            <p>Earum quae vitae molestias hic incidunt ipsum dolorum dolor sunt minima nihil eaque aliquid, ex ducimus similique tenetur recusandae? Nostrum praesentium deserunt laborum tempora! Ullam necessitatibus natus est officiis, eos.</p>
+            <h6>Header 6</h6>
+            <p>Voluptatum tempora perferendis, labore nemo error nostrum sint, aspernatur beatae nesciunt necessitatibus cumque odio sed magni alias eaque aut commodi corporis veritatis, unde, quasi nobis. Voluptates dolorum, fugiat commodi doloremque.</p>
+        </section>
+
+        <section class="dev" id="sl">
+
+            <h2>Slider</h2>
+
+            <div class="slider" id="slider">
+                <div class="slider__wrapper">
+                    <figure class="slider__figure">
+                        <img class="slider__img js" data-layzr="img/cat.png" alt="a funny cat" width="476">
+                        <figcaption class="slider__caption"><p>Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="-1">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="-1">Unsplash</a></p></figcaption>
+                    </figure>
+                    <figure class="slider__figure">
+                        <img class="slider__img js" data-layzr="img/cat2.png" alt="a funny cat" width="476">
+                        <figcaption class="slider__caption"><p>Photo by <a href="https://unsplash.com/photos/ZEd44nDPTfA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="-1"> Martin Schiffer</a> on <a href="https://unsplash.com/photos/ZEd44nDPTfA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="-1">Unsplash</a></p></figcaption>
+                    </figure>
+                    <figure class="slider__figure">
+                        <img class="slider__img js" data-layzr="img/cat3.png" alt="a funny cat" width="476">
+                        <figcaption class="slider__caption"><p>Photo by <a href="https://unsplash.com/photos/ri0ylwID5ao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="-1">Martina Misar-Tummeltshammer</a> on <a href="https://unsplash.com/photos/ri0ylwID5ao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="-1">Unsplash</a></p></figcaption>
+                    </figure>
+                </div>
+                <button class="slider__btn" id="prev">Prev</button>
+                <button class="slider__btn" id="next">Next</button>
+            </div>
+        </section>
+
+        <section class="dev" id="ac">
+
+        <section class="dev" id="im">
+            <h2>Image + float right</h2>
+
+            <p class="clearfix"><img class="img js fl-r" data-layzr="img/cat.png" alt="a funny cat" width="476"> Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Unsplash</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse dignissimos distinctio, dicta dolores non in eos amet iure et error fugiat maxime quia architecto nisi exercitationem, placeat sit sequi.</p>
+
+            <h2>Image + float none + img border</h2>
+            <p class="clearfix"><img class="img img_border js fl-n" data-layzr="img/cat.png" alt="a funny cat" width="476"> Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Unsplash</a> Ab libero possimus ut illum inventore autem reiciendis, rerum enim, quidem asperiores nesciunt corrupti consequuntur pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sit quibusdam eveniet, repudiandae similique.</p>
+
+            <h2>Broken image + float left</h2>
+            <p class="clearfix"><img class="img js fl-l" data-layzr="im/cat.png" alt="a funny cat" width="476"> Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Unsplash</a> Ab libero possimus ut illum inventore autem reiciendis, rerum enim, quidem asperiores nesciunt corrupti consequuntur pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sit quibusdam eveniet, repudiandae similique.</p>
+
+            <h2>Figure</h2>
+
+            <figure class="figure">
+        		<img class="img js" data-layzr="img/cat.png" alt="a funny cat" width="476">
+        		<img class="img img_nojs" style="display:none" src="cat.png" alt="a funny cat" width="476">
+        		<figcaption class="figcaption">Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Unsplash</a></figcaption>
+        	</figure>
+
             <p>Placeat at doloremque, veniam alias voluptatum omnis, dolorum deleniti perspiciatis sed praesentium consequuntur obcaecati. Doloremque asperiores velit enim tempora, odio quas molestiae, id, dolore cupiditate doloribus dolorem tempore. At, et.</p>
-            <cite>This is the sourse</cite>
-        </blockquote>
+        </section>
 
-        <p>Iste delectus doloribus obcaecati eum consectetur autem vel et, aspernatur rerum, aliquid, harum necessitatibus.</p>
+        <section class="dev" id="you">
 
-        <h2>UL list</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fuga, dolorum labore quod quam veniam in iure excepturi modi, eligendi, sequi illum delectus amet animi quae, culpa esse voluptate saepe?</p>
-
-        <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quod suscipit accusamus dolorum aut enim nesciunt quis a quam sequi?</li>
-            <li>Enim neque voluptatem deserunt voluptates maxime non, amet! Aspernatur autem, tenetur libero. Cumque nihil quidem id asperiores dolorem voluptas commodi!</li>
-            <li>Dolorum similique doloremque corrupti maiores asperiores, possimus? Ipsa sit ad ut quasi. Similique, quae, laboriosam commodi facilis beatae aliquam necessitatibus!</li>
-        </ul>
-
-        <h2>Ol list</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sint amet dolores alias vitae asperiores, ipsa quo assumenda, ipsum saepe quidem quaerat nulla odio officiis nam. Fugit explicabo, id, quisquam alias possimus libero perspiciatis iure, ea quidem vero cupiditate dolores? Id, eveniet porro. Vero fugiat nostrum ducimus at error mollitia.</p>
-        <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aspernatur eaque repudiandae consequatur aut optio porro distinctio nobis laborum quo ipsam magnam possimus ab voluptas sequi, alias architecto. Saepe, modi.</li>
-            <li>Ipsam praesentium, voluptates cum facilis nam porro omnis, accusamus quam beatae consequatur, eum vitae excepturi. Fugit ex quisquam, magnam consequuntur corporis officiis impedit, aperiam, atque nemo iste delectus ullam sed?</li>
-            <li>Voluptates explicabo ea tenetur omnis sapiente dolore alias reprehenderit odio accusantium fugiat nam, itaque temporibus eveniet quisquam, doloribus. Fugit velit optio amet eaque est ex accusamus id ab vel commodi?</li>
-            <li>Ex odio, libero numquam error omnis accusamus, reiciendis porro. Et enim quasi sequi omnis laboriosam quod at numquam, iste tempora, quibusdam quidem perferendis? Voluptatum nemo modi quis quod, tenetur quidem.</li>
-            <li>Distinctio tempore harum iste, itaque vitae culpa explicabo repudiandae, unde nihil numquam possimus eius dolore iusto dicta inventore laudantium! Eligendi, repudiandae consequuntur perferendis quas voluptas eaque! Nostrum corporis, eveniet est!</li>
-        </ol>
-
-        <h2>Table</h2>
-
-        <table class="tbl" tabindex="0">
-            <caption>Employees</caption>
-            <thead>
-                <tr>
-                    <th scope="col">First name</th>
-                    <th scope="col">Second name</th>
-                    <th class="tx-r" scope="col">Age</th>
-                    <th scope="col">Job</th>
-                    <th scope="col">Email</th>
-                    <th class="tx-r" scope="col">Salary</th>
-                    <th scope="col">State</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Alex</td>
-                    <td>Olshakov</td>
-                    <td class="tx-r">23</td>
-                    <td>Clerk</td>
-                    <td>a@gmail.com</td>
-                    <td class="tx-r">52000</td>
-                    <td>Ohio</td>
-                </tr>
-                <tr>
-                    <td>Ivan</td>
-                    <td>Kine</td>
-                    <td class="tx-r">80</td>
-                    <td>Clerk</td>
-                    <td>i@gmail.com</td>
-                    <td class="tx-r">49000</td>
-                    <td>Ohio</td>
-                </tr>
-                <tr>
-                    <td>Oleg</td>
-                    <td>Shekin</td>
-                    <td class="tx-r">65</td>
-                    <td>Clerk</td>
-                    <td>o@gmail.com</td>
-                    <td class="tx-r">51000</td>
-                    <td>Ohio</td>
-                </tr>
-                <tr>
-                    <td>Tem</td>
-                    <td>Forki</td>
-                    <td class="tx-r">45</td>
-                    <td>Clerk</td>
-                    <td>t@gmail.com</td>
-                    <td class="tx-r">50000</td>
-                    <td>Ohio</td>
-                </tr>
-                <tr>
-                    <td>Mikle</td>
-                    <td>Petro</td>
-                    <td class="tx-r">50</td>
-                    <td>Clerk</td>
-                    <td>m@gmail.com</td>
-                    <td class="tx-r">48000</td>
-                    <td>Ohio</td>
-                </tr>
-            </tbody>
-        </table>
-
-
-        <h2>Share</h2>
-
-        <ul class="share">
-            <li class="share__item">
-                <button class="share__btn share__btn_js share__btn_vk" type="button" id="shareVk">Share on VK.com</button>
-            </li>
-            <li class="share__item">
-                <button class="share__btn share__btn_js share__btn_fb" type="button" id="shareFb">Share on Facebook</button>
-            </li>
-            <li class="share__item">
-                <button class="share__btn share__btn_js share__btn_tw" type="button" id="shareTw">Share on Twitter</button>
-            </li>
-            <li class="share__item">
-                <button class="share__btn  share__btn_print" type="button" onclick="window.print();">Print the page</button>
-            </li>
-            <li class="share__item">
-                <a href="mailto:?subject= &amp;body= " class="share__btn share__btn_mail">send a link to an email</a>
-            </li>
-        </ul><!-- end .share -->
-
-
-        <h2>Accordion</h2>
-
-        <dl class="accordion">
-
-            <dt class="accordion__title">
-                <button class="accordion__btn" aria-expanded="true" aria-controls="faq1" type="button">What do I do if I have a permit for…</button>
-            </dt>
-            <dd id="faq1" class="accordion__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </dd>
-
-            <dt class="accordion__title">
-                <button class="accordion__btn" aria-expanded="false" aria-controls="faq2" type="button">Lorem ipsum dolor sit amet, consectetur</button>
-            </dt>
-            <dd id="faq2" class="accordion__text closed">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </dd>
-
-        </dl>
-
-
-        <h2>Tabs</h2>
-
-        <div class="tabs js">
-
-            <div class="tabs__list js" role="tablist" aria-label="Examples">
-
-                <button class="tabs__btn" role="tab" aria-selected="true" aria-controls="first-tab" id="first" type="button">First tab</button>
-
-                <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="second-tab" id="second" type="button" tabindex="-1">Second tab</button>
-
-            </div><!-- end .tabs__list -->
-
-
-            <div class="tabs__panel" role="tabpanel" aria-labelledby="first" id="first-tab" tabindex="0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, animi, unde. Earum, in distinctio doloremque, maiores optio dolorem, veniam voluptatum hic culpa non harum quibusdam. Deleniti adipisci laudantium aut voluptatum.</p>
-                <p>Eaque officia temporibus iusto illum, maiores quo. At natus assumenda error voluptas saepe, obcaecati architecto eos modi illo eius ea omnis fuga culpa dicta animi, quae perspiciatis aspernatur eaque odit.</p>
+            <h2>YouTube</h2>
+            <div class="youtube" data-embed="u7XQh6Gc-hc">
+                <button class="youtube__btn" type="button">Загрузить видео</button>
             </div>
 
-            <div class="tabs__panel" role="tabpanel" aria-labelledby="second" id="second-tab" tabindex="0" hidden>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptate sit odit beatae saepe natus excepturi! Eveniet repellendus non accusantium quo, saepe eaque quis ex impedit quasi, veniam, maxime fugit.</p>
-                <p>Adipisci labore obcaecati pariatur inventore sint ipsum deleniti, culpa similique, magnam excepturi accusantium odit vel consequatur voluptates ipsam, nulla eaque nihil alias optio, nemo assumenda quam dignissimos quos? Esse, ea.</p>
-                <p>Reiciendis, eius perferendis ipsa deleniti, facilis minima totam voluptas fugit fugiat eveniet recusandae dolor explicabo, repudiandae nihil nemo. Autem sapiente, commodi doloremque ipsam doloribus tempora non voluptas neque consequuntur excepturi.</p>
+            <div class="youtube" data-embed="Zqtor5hNKZI">
+                <button class="youtube__btn" type="button">Загрузить видео</button>
             </div>
 
-        </div><!-- end .tabs -->
-
-
-        <h2>Header 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quisquam ipsam beatae maiores et! Tenetur soluta eum, doloremque a. Voluptate iste ipsum reprehenderit cum quo, inventore perspiciatis aliquid fugiat amet?</p>
-        <h3>Header 3</h3>
-        <p>Quis repellat cumque iste molestiae dolorum, quibusdam omnis necessitatibus, quo, hic, veritatis delectus obcaecati deserunt ratione ad voluptas error numquam esse ipsa dolorem magnam minus ab aliquid veniam placeat. Eos.</p>
-        <h4>Header 4</h4>
-        <p>Ratione, libero dolorum commodi mollitia praesentium odit accusamus, incidunt ducimus a nam cupiditate? Ratione nemo culpa nostrum debitis ullam cupiditate placeat blanditiis totam earum tenetur, possimus est nobis sint rem.</p>
-        <h5>Header 5</h5>
-        <p>Earum quae vitae molestias hic incidunt ipsum dolorum dolor sunt minima nihil eaque aliquid, ex ducimus similique tenetur recusandae? Nostrum praesentium deserunt laborum tempora! Ullam necessitatibus natus est officiis, eos.</p>
-        <h6>Header 6</h6>
-        <p>Voluptatum tempora perferendis, labore nemo error nostrum sint, aspernatur beatae nesciunt necessitatibus cumque odio sed magni alias eaque aut commodi corporis veritatis, unde, quasi nobis. Voluptates dolorum, fugiat commodi doloremque.</p>
-
-        <h2>Slider</h2>
-
-        <div class="slider" id="slider">
-            <div class="slider__wrapper">
-                <figure class="slider__figure">
-                    <img class="slider__img js" data-layzr="img/cat.png" alt="a funny cat" width="476">
-                    <figcaption class="slider__caption"><p>Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="0">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="0">Unsplash</a></p></figcaption>
-                </figure>
-                <figure class="slider__figure">
-                    <img class="slider__img js" data-layzr="img/cat2.png" alt="a funny cat" width="476">
-                    <figcaption class="slider__caption"><p>Photo by <a href="https://unsplash.com/photos/ZEd44nDPTfA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="0"> Martin Schiffer</a> on <a href="https://unsplash.com/photos/ZEd44nDPTfA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="0">Unsplash</a></p></figcaption>
-                </figure>
-                <figure class="slider__figure">
-                    <img class="slider__img js" data-layzr="img/cat3.png" alt="a funny cat" width="476">
-                    <figcaption class="slider__caption"><p>Photo by <a href="https://unsplash.com/photos/ri0ylwID5ao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="0">Martina Misar-Tummeltshammer</a> on <a href="https://unsplash.com/photos/ri0ylwID5ao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" tabindex="0">Unsplash</a></p></figcaption>
-                </figure>
-            </div>
-            <button class="slider__btn" id="prev">Prev</button>
-            <button class="slider__btn" id="next">Next</button>
-        </div>
-
-
-
-        <h2>Image + float right</h2>
-
-        <p class="clearfix"><img class="img js fl-r" data-layzr="img/cat.png" alt="a funny cat" width="476"> Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Unsplash</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse dignissimos distinctio, dicta dolores non in eos amet iure et error fugiat maxime quia architecto nisi exercitationem, placeat sit sequi.</p>
-
-        <h2>Image + float none + img border</h2>
-        <p class="clearfix"><img class="img img_border js fl-n" data-layzr="img/cat.png" alt="a funny cat" width="476"> Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Unsplash</a> Ab libero possimus ut illum inventore autem reiciendis, rerum enim, quidem asperiores nesciunt corrupti consequuntur pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sit quibusdam eveniet, repudiandae similique.</p>
-
-        <h2>Broken image + float left</h2>
-        <p class="clearfix"><img class="img js fl-l" data-layzr="im/cat.png" alt="a funny cat" width="476"> Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Unsplash</a> Ab libero possimus ut illum inventore autem reiciendis, rerum enim, quidem asperiores nesciunt corrupti consequuntur pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sit quibusdam eveniet, repudiandae similique.</p>
-
-        <h2>Figure</h2>
-
-        <figure class="figure">
-    		<img class="img js" data-layzr="img/cat.png" alt="a funny cat" width="476">
-    		<img class="img img_nojs" style="display:none" src="cat.png" alt="a funny cat" width="476">
-    		<figcaption class="figcaption">Photo by <a href="https://unsplash.com/photos/zBvVuRJ71vU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Marko Blažević</a> on <a href="https://unsplash.com/search/photos/cat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer">Unsplash</a></figcaption>
-    	</figure>
-
-        <p>Placeat at doloremque, veniam alias voluptatum omnis, dolorum deleniti perspiciatis sed praesentium consequuntur obcaecati. Doloremque asperiores velit enim tempora, odio quas molestiae, id, dolore cupiditate doloribus dolorem tempore. At, et.</p>
-
-        <h2>Media</h2>
-
-        <!-- <div class="media js">
-        	<iframe class="media__obj" width="548" height="308" src="https://www.youtube.com/embed/u7XQh6Gc-hc?rel=0&amp;&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div> -->
-
-        <p>Quis repellat cumque iste molestiae dolorum, quibusdam omnis necessitatibus, quo, hic, veritatis delectus obcaecati deserunt ratione ad voluptas error numquam esse ipsa dolorem magnam minus ab aliquid veniam placeat. Eos.</p>
-
-
-        <h2>YouTube</h2>
-        <div class="youtube" data-embed="u7XQh6Gc-hc">
-            <button class="youtube__btn" type="button">Загрузить видео</button>
-        </div>
-
-        <div class="youtube" data-embed="Zqtor5hNKZI">
-            <button class="youtube__btn" type="button">Загрузить видео</button>
-        </div>
+        </section>
 
 
 

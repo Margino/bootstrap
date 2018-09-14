@@ -1,0 +1,9 @@
+.dev {
+    max-width: 686px;
+    min-height: 100vh;
+    padding: 28px 14px 27px;
+
+    border-bottom: 1px solid transparent;
+
+    scroll-snap-align: center;
+}

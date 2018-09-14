@@ -176,8 +176,7 @@ gulp.task('watch', function() {
 });
 
 // сборка проекта
-gulp.task('dev', ['remove',
-                  'css',
+gulp.task('dev', ['css',
                   'css:add',
                   'css:print',
                   'js',
