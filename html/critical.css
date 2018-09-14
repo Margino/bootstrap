@@ -9,9 +9,4 @@ html {
     font-style: normal;
 
     border: 0;
-
-    /* prevent adjustments of font size after orientation changes in iOS */
-    -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-            text-size-adjust: 100%;
 }
