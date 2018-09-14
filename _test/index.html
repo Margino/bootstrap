@@ -6,16 +6,16 @@
 
     <title>Core components</title>
 
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="preload" href="/js/main.min.js" as="script">
-    <link rel="preload" href="/css/decor.min.css" as="style">
-    <link rel="preload" href="/css/print.min.css" as="style">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preload" href="js/main.min.js" as="script">
+    <link rel="preload" href="css/decor.min.css" as="style">
+    <link rel="preload" href="css/print.min.css" as="style">
 
     <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
 
     <noscript>
         <style>.attention{display:block}</style>
-        <link rel="stylesheet" href="/css/print.min.css">
+        <link rel="stylesheet" href="css/print.min.css">
     </noscript>
 
 
@@ -66,17 +66,16 @@
 
             <h2>Paragraph</h2>
 
-            <p>The HTML "p" element represents a paragraph of text. Paragraphs are usually represented in visual media as blocks of text that are separated from adjacent blocks by vertical blank space and/or first-line indentation. Paragraphs are block-level elements.</p>
+            <p>The HTML "<a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/p">p</a>" element represents a paragraph of text. Paragraphs are usually represented in visual media as blocks of text that are separated from adjacent blocks by vertical blank space and/or first-line indentation. Paragraphs are block-level elements.</p>
             <p>The start tag is required. The end tag may be omitted if the "p" element is immediately followed by an: address, article, aside, blockquote, div, dl, fieldset, footer, form, h1, h2, h3, h4, h5, h6, header, hr, menu, nav, ol, pre, section, table, ul, or another "p" element, or if there is no more content in the parent element and the parent element is not an "a" element.</p>
             <p>Permitted ARIA roles: any.</p>
-            <p>Source: <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/p">MDN</a></p>
 
         </section>
 
         <section class="dev" id="lk">
 
             <h2>Links</h2>
-            <p>The HTML "a" element (or anchor element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.</p>
+            <p>The HTML "<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">a</a>" element (or anchor element) creates a hyperlink to other web pages, files, locations within the same page, email addresses, or any other URL.</p>
             <p>Tag omission: none, both the starting and ending tag are mandatory.</p>
             <p>Note: When using target, consider adding rel="noopener noreferrer" to avoid exploitation of the window.opener API.</p>
             <p>Emaxple: this is <a href="?link">a link</a>, this is a <a href="#">visited link</a>.</p>
@@ -192,6 +191,7 @@
         <section class="dev" id="sh">
 
             <h2>Share</h2>
+            <p>Don't forget turn off Adblock.</p>
 
             <ul class="share">
                 <li class="share__item">
@@ -210,6 +210,8 @@
                     <a href="mailto:?subject= &amp;body= " class="share__btn share__btn_mail">send a link to an email</a>
                 </li>
             </ul><!-- end .share -->
+
+
 
         </section>
 
@@ -233,6 +235,15 @@
                 <dd id="faq2" class="accordion__text closed">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </dd>
+
+                <dt class="accordion__title">
+                    <button class="accordion__btn" aria-expanded="false" aria-controls="faq3" type="button">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+                </dt>
+                <dd id="faq3" class="accordion__text closed">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus harum dicta culpa expedita, eum facere id modi necessitatibus cupiditate accusamus, corporis? Voluptates quod facilis labore voluptatem, a autem.</p>
+                    <p>Nihil atque vitae iusto ducimus corporis tenetur voluptatibus, illo et modi tempora, officiis pariatur. Voluptates, magnam, magni? Praesentium aliquid quis ullam beatae quasi fuga et consectetur, perferendis odio!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid omnis iste, libero sunt rerum quaerat. Temporibus, accusantium sequi!</p>
                 </dd>
 
             </dl>
@@ -350,6 +361,6 @@
 
     </div><!-- end .wrap -->
 
-    <script src="/js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>

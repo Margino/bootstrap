@@ -1,3 +1,3 @@
 if (document.querySelector('.slider')) {
-  addScript('/js/slider_lib.js', 'script');
+  addScript('js/slider_lib.js', 'script');
 }
