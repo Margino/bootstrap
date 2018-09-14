@@ -1,3 +1,3 @@
 if (document.querySelector('.tabs')) {
-  addScript('/js/tabs_lazy.js', 'script');
+  addScript('/js/tabs_lib.js', 'script');
 }

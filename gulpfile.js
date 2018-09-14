@@ -93,8 +93,7 @@ gulp.task('js', () => {
 });
 
 
-
-// libraries
+// lazy
 gulp.task('js:lazy', () => {
     return gulp.src([
         './**/*_lazy.js',
@@ -113,6 +112,24 @@ gulp.task('js:lazy', () => {
         ))
         .pipe(rename({dirname: ''}))
         .pipe(gulp.dest('./_test/js'))
+});
+
+// libraris
+gulp.task('js:lib', () => {
+    return gulp.src([
+        './**/*_lib.js',
+        '!./_test/**',
+        '!./node_modules/**'
+    ])
+    .pipe(uglify(
+        {
+        output: {
+                comments: `/^!/`
+            }
+        }
+    ))
+    .pipe(rename({dirname: ''}))
+    .pipe(gulp.dest('./_test/js'))
 });
 
 
@@ -155,7 +172,7 @@ gulp.task('serv', function() {
 // следим за изменением файлов
 gulp.task('watch', function() {
     gulp.watch(path.css, ['css','css:add','css:print','serv']);
-    gulp.watch(path.js, ['js','serv']);
+    gulp.watch(path.js, ['js','js:lazy','serv']);
 });
 
 // сборка проекта
@@ -165,5 +182,6 @@ gulp.task('dev', ['remove',
                   'css:print',
                   'js',
                   'js:lazy',
+                  'js:lib',
                   'serv',
                   'watch']);
