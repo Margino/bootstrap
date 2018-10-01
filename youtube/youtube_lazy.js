@@ -4,16 +4,11 @@ youtube.forEach((item) => {
 
     item.classList.add('load');
 
-    const source = `https://img.youtube.com/vi/${item.dataset.embed}/sddefault.jpg`;
-
     // upload an image
     const image = new Image();
-    image.src = source;
-    image.addEventListener('load', () => {
-        item.appendChild(image);
-    });
-
+    image.src = `https://img.youtube.com/vi/${item.dataset.embed}/sddefault.jpg`;
     image.onload = () => {
+        item.appendChild(image);
         item.classList.remove('load');
     };
 
