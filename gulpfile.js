@@ -64,7 +64,7 @@ gulp.task('css:add', () => {
 gulp.task('css:print', () => {
     return gulp.src([
         './root/critical.css',
-        './**/ptint.css',
+        './**/print.css',
         '!./_test/**',
         '!./node_modules/**',
         ])
