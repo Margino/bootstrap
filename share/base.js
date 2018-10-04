@@ -1,3 +1,3 @@
-if (document.querySelector('.share')) {
-  addScript('js/share_lazy.js', 'script');
+if (document.querySelector('#toFriends')) {
+  addScript('js/toFriends_lazy.js', 'script');
 }

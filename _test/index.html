@@ -11,6 +11,7 @@
     <link rel="preload" href="css/decor.min.css" as="style">
     <link rel="preload" href="css/print.min.css" as="style">
 
+
     <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
 
     <noscript>
@@ -193,23 +194,8 @@
             <h2>Share</h2>
             <p>Don't forget turn off Adblock.</p>
 
-            <ul class="share">
-                <li class="share__item">
-                    <button class="share__btn share__btn_js share__btn_vk" type="button" id="shareVk">Share on VK.com</button>
-                </li>
-                <li class="share__item">
-                    <button class="share__btn share__btn_js share__btn_fb" type="button" id="shareFb">Share on Facebook</button>
-                </li>
-                <li class="share__item">
-                    <button class="share__btn share__btn_js share__btn_tw" type="button" id="shareTw">Share on Twitter</button>
-                </li>
-                <li class="share__item">
-                    <button class="share__btn  share__btn_print" type="button" onclick="window.print();">Print the page</button>
-                </li>
-                <li class="share__item">
-                    <a href="mailto:?subject= &amp;body= " class="share__btn share__btn_mail">send a link to an email</a>
-                </li>
-            </ul><!-- end .share -->
+            <p>New block share</p>
+            <div data-btn="vk, fb, tw, print, mail" id="toFriends"></div>
 
 
 
