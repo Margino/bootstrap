@@ -49,6 +49,7 @@ body.tabbing .youtube__btn:focus:not([tabindex="-1"]) {
     width: 100%;
 
     opacity: 0.7;
+    filter: grayscale(100%);
 }
 
 .youtube iframe {
