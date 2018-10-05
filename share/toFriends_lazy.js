@@ -1,13 +1,11 @@
 (function () {
 
-    const toFriendsBlock = document.querySelector('#toFriends');
-    const listOfButtons = toFriendsBlock.getAttribute('data-btn').split(',');
-
     // get the language of the page
     let lang = document.documentElement.lang;
     if (lang !== 'ru' && lang !== 'en') lang = 'ru';
 
-    const buttonProperty = {
+    // the list of available buttons
+    const buttons = {
         vk: {
             ru: 'Поделиться ВКонтакте',
             en: 'Send to VC.com'
@@ -30,6 +28,13 @@
         }
     };
 
+    const toFriendsBlock = document.querySelector('#toFriends');
+    // get a list of passed buttons
+    const listOfButtons = toFriendsBlock.getAttribute('data-btn').split(',').map((el) => {
+        return el.toString().trim();
+    });
+
+
     // render the buttons
     const toFriends = document.createElement('ul');
     toFriends.classList.add('toFriends');
@@ -37,10 +42,10 @@
     for (let i in listOfButtons) {
 
         // remove spaces
-        const curretnButton = listOfButtons[i].trim();
+        const curretnButton = listOfButtons[i];
 
-        // render a button when it has the buttonProperty
-        if (buttonProperty[curretnButton]) {
+        // render a button only if it is in the list of available buttons
+        if (buttons[curretnButton]) {
             // create a li element
             const item = document.createElement('li');
             item.classList.add('toFriends__item');
@@ -49,14 +54,15 @@
             button.type = 'button';
             button.classList.add('toFriends__btn', `toFriends__btn_${curretnButton}`);
             button.setAttribute('data-type', curretnButton);
-            button.setAttribute('data-label', buttonProperty[curretnButton][lang]);
+            button.setAttribute('data-label', buttons[curretnButton][lang]);
 
             // add created button to the li
             item.appendChild(button);
             // add the li into the ul.toFriends
             toFriends.appendChild(item);
-        } else {
-            console.warn(`[App|share]: check "${curretnButton}" in "data-btn"`);
+        }
+        else {
+            console.warn(`[App.share]: check the attribute "${curretnButton}" in the #${toFriendsBlock.id}["data-btn"]`);
         }
 
     }
