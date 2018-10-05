@@ -6,7 +6,7 @@ addScript('css/print.min.css', 'link', 'print');
 window.addEventListener('keydown', handleFirstTab);
 
 // Feedback
-console.warn('%c%s', 'font-weight: bold', 'Find a bug? Please let me know https://github.com/Margino/report-bugs');
+console.info('%c%s', 'font-weight: bold', 'Find a bug? Please let me know https://github.com/Margino/report-bugs');
 
 
 // ========== Functions ========== //
@@ -68,4 +68,26 @@ function addScript(src, type, media) {
 // Add a block after an element
 function insertAfter(elem, refElem) {
       return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+}
+
+// Get a language of a page
+function getPageLanguage() {
+
+    // array of available languages
+    const languages = ['ru', 'en'];
+
+    // get the language from the html tag (the first 2 letters)
+    const htmlLang = document.documentElement.lang.trim().slice(0,2);
+
+    // check if the language from the html tag is on the array
+    let language = languages.find((lang) => {
+        return lang.toLowerCase() === htmlLang.toLowerCase();
+    });
+    if (language === undefined) {
+        // return the first available language from the array if the language from the html tag is unknown
+        language = languages[0];
+        console.warn('[App.lang]: check the attribure "lang" in <html>');
+    }
+
+    return language;
 }
