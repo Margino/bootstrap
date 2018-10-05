@@ -1,8 +1,7 @@
 (function () {
 
     // get the language of the page
-    let lang = document.documentElement.lang;
-    if (lang !== 'ru' && lang !== 'en') lang = 'ru';
+    const lang = getPageLanguage();
 
     // the list of available buttons
     const buttons = {
