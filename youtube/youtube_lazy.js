@@ -5,7 +5,7 @@
 
     const youtubeText = {
         button: {
-            ru: 'загрузить видео с YouTube',
+            ru: 'загрузить видео',
             en: 'show embed'
         }
     }
@@ -16,8 +16,10 @@
         const playButton = document.createElement('button');
         playButton.type = 'button';
         playButton.classList.add('youtube__btn');
-        playButton.text = ${youtubeText.button[lang]};
-        console.log(playButton.text);
+        playButton.textContent = youtubeText.button[lang];
+        if (youtubeText.button[lang]) {
+            item.appendChild(playButton);
+        }
 
         item.classList.add('load');
 
