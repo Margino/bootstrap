@@ -1,7 +1,7 @@
-.figcaption {
+figcaption {
     color: var(--grey_dark);
 }
 
-.figcaption a {
+figcaption a {
     color: var(--grey_dark);
 }
