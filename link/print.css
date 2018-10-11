@@ -1,4 +1,4 @@
-a[href]:not([href^="mailto"])::after {
+a[href]:not([href^="mailto"]):not([href^="#"])::after {
     content: " (" attr(href) ")";
 
     color: var(--link);
