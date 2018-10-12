@@ -1,6 +1,7 @@
-a[href]:not([href^="mailto"]):not([href^="#"])::after {
-    content: " (" attr(href) ")";
+@media print {
+    a[href]:not([href^="mailto"]):not([href^="#"])::after {
+        content: " (" attr(href) ")";
 
-    color: var(--link);
-    text-decoration: none;
+        color: var(--link);
+    }
 }

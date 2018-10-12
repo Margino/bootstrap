@@ -7,17 +7,10 @@
     display: none;
 }
 
-.youtube img {
-    display: none;
-}
-
 .youtube iframe {
     display: none;
 }
 
 .youtube[data-embed]::after {
     content: "https://www.youtube.com/watch?v="attr(data-embed);
-    color: var(--link);
-    cursor: auto;
-    text-decoration: underline;
 }
