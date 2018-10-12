@@ -4,18 +4,7 @@
     border-bottom: 1px solid var(--grey_light);
 }
 
-.tabs__list::before {
-    content: attr(aria-label);
-
-    display: block;
-    padding-top: var(--indent);
-    padding-bottom: var(--indent);
-
-    font-weight: bold;
-    font-size: var(--font-size_XL);
-}
-
-.tabs__list > * {
+.tabs__list {
     display: none;
 }
 
