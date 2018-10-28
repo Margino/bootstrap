@@ -5,7 +5,3 @@ a {
 a:visited {
     color: var(--link_visited);
 }
-
-a:hover {
-    color: var(--red);
-}
