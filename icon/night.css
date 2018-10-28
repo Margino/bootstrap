@@ -6,6 +6,9 @@ body.night .icon {
 @supports ( (filter: invert()) or (-webkit-filter: invert()) ) {
     body.night .icon {
         background-color: transparent;
+    }
+
+    body.night .icon::before {
         -webkit-filter: invert(1);
                 filter: invert(1);
     }
