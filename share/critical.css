@@ -1,0 +1,3 @@
+.toFriends {
+    min-height: 28px; /* to avoid rerendering when add icons  */
+}
