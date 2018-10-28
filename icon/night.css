@@ -1,0 +1,12 @@
+body.night .icon {
+    background-color: var(--night-color_light);
+    border-radius: 2px;
+}
+
+@supports ( (filter: invert()) or (-webkit-filter: invert()) ) {
+    body.night .icon {
+        background-color: transparent;
+        -webkit-filter: invert(1);
+                filter: invert(1);
+    }
+}
