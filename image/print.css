@@ -1,9 +1,11 @@
-img {
-    max-width: 50%;
+@media print {
+    img {
+        max-width: 50%;
 
-    page-break-after: auto;
-    page-break-before: auto;
-    page-break-inside: avoid;
+        page-break-after: auto;
+        page-break-before: auto;
+        page-break-inside: avoid;
+    }
 }
 
 /* broken images */
