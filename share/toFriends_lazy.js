@@ -53,7 +53,7 @@
             button.type = 'button';
             button.classList.add('toFriends__btn', `toFriends__btn_${curretnButton}`);
             button.setAttribute('data-type', curretnButton);
-            button.setAttribute('data-label', buttons[curretnButton][lang]);
+            button.setAttribute('aria-label', buttons[curretnButton][lang]);
 
             // add created button to the li
             item.appendChild(button);
