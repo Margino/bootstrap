@@ -12,20 +12,3 @@ if (!modernBrowser && document.getElementById('attention')) {
   // the attention block has display:none by default
   document.getElementById('attention').style.display = 'block';
 }
-
-
-// ===== Functions ===== //
-
-function supportCSS(property, value) {
-    try {
-        var el = document.createElement('div');
-        if (el.style[property] !== undefined)
-            el.style[property] = value;
-        else
-            return false;
-
-        return el.style[property] === value;
-    } catch (e) {
-        return false;
-    }
-};

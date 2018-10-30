@@ -91,3 +91,19 @@ function getPageLanguage() {
 
     return language;
 }
+
+
+// check a css property
+function supportCSS(property, value) {
+    try {
+        var el = document.createElement('div');
+        if (el.style[property] !== undefined)
+            el.style[property] = value;
+        else
+            return false;
+
+        return el.style[property] === value;
+    } catch (e) {
+        return false;
+    }
+};
