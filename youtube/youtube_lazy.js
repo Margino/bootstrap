@@ -21,19 +21,16 @@
             item.appendChild(playButton);
         }
 
-        item.classList.add('load');
-
         // upload an image
         const image = new Image();
         image.src = `https://img.youtube.com/vi/${item.dataset.embed}/sddefault.jpg`;
         image.onload = () => {
             item.appendChild(image);
-            item.classList.remove('load');
         };
 
         item.querySelector('.youtube__btn').addEventListener('click', () => {
 
-            item.classList.add('load');
+            item.classList.add('icon_load');
 
             const iframe = document.createElement('iframe');
             iframe.setAttribute('frameborder', '0');
@@ -43,7 +40,7 @@
             item.appendChild(iframe);
 
             iframe.onload = () => {
-                item.classList.remove('load');
+                item.classList.remove('icon_load');
             };
 
 
