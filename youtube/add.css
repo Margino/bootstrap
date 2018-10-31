@@ -1,3 +1,4 @@
+/* 1 if text is too long */
 .youtube__btn {
     position: absolute;
     top: 50%;
@@ -5,12 +6,16 @@
     z-index: 1;
 
     display: block;
+    max-width: 80%; /* 1 */
     margin: 0;
     padding: var(--indent_x05) var(--indent);
+    overflow: hidden; /* 1 */
 
     font-size: var(--font-size_SX);
     color: #ffffff;
     text-transform: uppercase;
+    white-space: nowrap; /* 1 */
+    text-overflow: ellipsis; /* 1 */
 
     background: rgba(0, 0, 0, 0.5);
     background-image: none;

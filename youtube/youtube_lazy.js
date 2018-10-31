@@ -5,7 +5,7 @@
 
     const youtubeText = {
         button: {
-            ru: 'загрузить видео',
+            ru: 'показать видео',
             en: 'show embed'
         }
     }
