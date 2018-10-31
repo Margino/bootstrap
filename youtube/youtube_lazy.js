@@ -30,7 +30,7 @@
 
         item.querySelector('.youtube__btn').addEventListener('click', () => {
 
-            item.classList.add('icon_load');
+            item.classList.add('icon', 'icon_load');
 
             const iframe = document.createElement('iframe');
             iframe.setAttribute('frameborder', '0');
@@ -40,7 +40,7 @@
             item.appendChild(iframe);
 
             iframe.onload = () => {
-                item.classList.remove('icon_load');
+                item.classList.remove('icon', 'icon_load');
             };
 
 
