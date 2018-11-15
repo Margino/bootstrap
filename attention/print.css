@@ -1,3 +1,9 @@
+@media screen {
+    .attention {
+        display: block !important;
+    }
+}
+
 .attention {
     padding: var(--indent);
     padding-bottom: calc(var(--indent) - 1px);
