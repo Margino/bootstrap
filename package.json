@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "core components",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "natives": "^1.1.6"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.6",
     "css-mqpacker": "^7.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "latest",
     "gulp-babel": "^7.0.1",
     "gulp-remove-files": "latest",
     "gulp-concat": "^2.6.1",

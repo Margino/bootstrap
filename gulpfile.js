@@ -151,31 +151,78 @@ gulp.task('remove', function () {
 
 
 // server
-gulp.task('serv', function() {
+// gulp.task('serv', function() {
+//     browserSync.init({
+//         server: './_test/'
+//     });
+//
+//     browserSync.watch([
+//         './**/*.*',
+//         '!./node_modules/**',
+//         '!./_test/**',
+//         '!./gulpfile.js'
+//     ]).on('change', browserSync.reload);
+// });
+
+gulp.task('serv', () => {
     browserSync.init({
         server: './_test/'
-    });
-
-    browserSync.watch([
-        './**/*.*',
-        '!./node_modules/**',
-        '!./_test/**',
-        '!./gulpfile.js'
-    ]).on('change', browserSync.reload);
-});
+    })
+})
 
 
-gulp.task('watch', function() {
-    gulp.watch(path.css, ['css','css:add','css:print','serv']);
-    gulp.watch(path.js, ['js','js:lazy','serv']);
-});
+// gulp.task('watch', function() {
+//     gulp.watch(path.css, gulp.series('css','css:add','css:print','serv', function(done) {
+//         browserSync.reload()
+//         done()
+//     }))
+//     gulp.watch(path.js, gulp.series('js','js:lazy','serv', function(done) {
+//         browserSync.reload()
+//         done()
+//     }))
+// });
 
-// сборка проекта
-gulp.task('dev', ['css',
-                  'css:add',
-                  'css:print',
-                  'js',
-                  'js:lazy',
-                  'js:lib',
-                  'serv',
-                  'watch']);
+gulp.task('watch', () => {
+    gulp.watch(path.css, gulp.series(
+        'css',
+        'css:add',
+        'css:print',
+        function(done) {
+            browserSync.reload()
+            done()
+        }
+    ))
+    gulp.watch(path.css, gulp.series(
+        'js',
+        'js:lazy',
+        function(done) {
+            browserSync.reload()
+            done()
+        }
+    ))
+})
+
+// // сборка проекта
+// gulp.task('dev', gulp.series('css',
+//                   'css:add',
+//                   'css:print',
+//                   'js',
+//                   'js:lazy',
+//                   'js:lib',
+//                   'serv',
+//                   gulp.parallel(
+//                     'serv',
+//                     'watch'
+//                 ));
+
+gulp.task('dev', gulp.series(
+    'css:add',
+    'css:print',
+    'js',
+    'js:lazy',
+    'js:lib',
+    gulp.parallel(
+        'serv',
+        'watch'
+    )
+))
