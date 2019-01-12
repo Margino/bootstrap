@@ -21,3 +21,7 @@ h6 {
     line-height: inherit;
     vertical-align: baseline;
 }
+
+h1 + h2 {
+    padding-top: 0;
+}
