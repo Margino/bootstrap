@@ -1,3 +1,4 @@
+/* Unordered lists */
 ul {
     margin-top: 0;
     margin-bottom: 0;
@@ -8,11 +9,17 @@ ul {
     list-style: none;
 }
 
-ul li {
+.ul li {
     position: relative;
+
+    padding-bottom: 14px;
 }
 
-ul li::before {
+.ul li:nth-last-child(1):nth-child(odd) {
+    padding-bottom: 0;
+}
+
+.ul li::before {
     content: "•";
     position: absolute;
     top: -2px;
@@ -20,14 +27,29 @@ ul li::before {
 
     display: block;
 
-    font-size: var(--font-size_SX);
+    font-size: var(--font-size_XS);
 }
 
-ul ul {
+/* .ul ul {
     margin-bottom: 0;
+} */
+
+@media (min-width: 860px) {
+    ul {
+        margin-left: var(--indent_x15);
+    }
+
+    ul li::before {
+        left: calc(0px - var(--indent_x15));
+    }
+
+    /* ul ul {
+        margin-left: var(--indent_x15);
+    } */
 }
 
 
+/* Ordered lists */
 
 ol {
     margin-top: 0;
@@ -37,53 +59,10 @@ ol {
     padding: 0;
 
     list-style: none;
-
-    counter-reset: list_1;
-}
-
-ol li {
-    position: relative;
-
-    counter-increment: list_1;
-}
-
-ol li::before {
-    position: absolute;
-    top: 0;
-    left: calc(0px - var(--indent));
-
-    display: block;
-
-    font-weight: bold;
-    font-size: 80%;
-}
-
-ol > li::before {
-    content: counter(list_1);
-}
-
-/* вложенный список */
-ol > li > ol {
-    margin-bottom: 0;
-    margin-left: 0;
-
-    counter-reset: list_2;
-}
-
-ol > li > ol > li {
-    padding-left: var(--indent_x15);
-
-    counter-increment: list_2;
-}
-
-ol > li > ol > li::before {
-    content: counter(list_1) "." counter(list_2);
-    left: 0;
-
-    text-align: right;
 }
 
 
+/* description list */
 
 dl {
     margin: 0 0 var(--indent);
@@ -107,30 +86,68 @@ dd > :last-child {
 }
 
 
+
+
+
+
+/* ------ depricated ------ */
+
+/* ol {
+    counter-reset: list_1;
+} */
+
+/* ol li {
+    position: relative;
+
+    counter-increment: list_1;
+} */
+
+/* ol li::before {
+    position: absolute;
+    top: 0;
+    left: calc(0px - var(--indent));
+
+    display: block;
+
+    font-weight: bold;
+    font-size: 80%;
+} */
+
+/* ol > li::before {
+    content: counter(list_1);
+} */
+
+/* вложенный список */
+/* ol > li > ol {
+    margin-bottom: 0;
+    margin-left: 0;
+
+    counter-reset: list_2;
+} */
+
+/* ol > li > ol > li {
+    padding-left: var(--indent_x15);
+
+    counter-increment: list_2;
+} */
+
+/* ol > li > ol > li::before {
+    content: counter(list_1) "." counter(list_2);
+    left: 0;
+
+    text-align: right;
+} */
+
 @media (min-width: 860px) {
-    ul {
+    /* ol {
         margin-left: var(--indent_x15);
-    }
+    } */
 
-    ul li::before {
+    /* ol li::before {
         left: calc(0px - var(--indent_x15));
-    }
+    } */
 
-    ul ul {
-        margin-left: var(--indent_x15);
-    }
-
-
-
-    ol {
-        margin-left: var(--indent_x15);
-    }
-
-    ol li::before {
-        left: calc(0px - var(--indent_x15));
-    }
-
-    ol > li > ol > li {
+    /* ol > li > ol > li {
         padding-left: var(--indent_x15);
-    }
+    } */
 }
