@@ -1,16 +1,16 @@
-body.night thead th {
+body.night .tbl thead th {
     border-bottom-color: var(--night-color);
 }
 
-body.night table[tabindex="0"] {
+body.night .tbl[tabindex="0"] {
     outline-color: var(--night-background);
 }
 
-body.night tbody tr {
+body.night .tbl tbody tr {
     outline-color: var(--night-background);
 }
 
-body.night tbody tr:hover {
+body.night .tbl tbody tr:hover {
     outline-color: rgba(244, 143, 177, 0.5);
 }
 

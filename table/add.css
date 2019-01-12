@@ -1,19 +1,19 @@
-caption {
+.tbl caption {
     -webkit-font-smoothing: antialiased;
 }
 
-thead th {
+.tbl thead th {
     font-weight: bold;
 
     -webkit-font-smoothing: antialiased;
 }
 
-tbody tr:hover {
+.tbl tbody tr:hover {
     outline: 2px rgba(255,0,0,0.1) dashed;
     outline-offset: -3px;
 }
 
-body.tabbing table[tabindex="0"]:focus {
+body.tabbing .tbl[tabindex="0"]:focus {
     outline: 4px solid var(--outline);
     outline-offset: 2px;
 }

@@ -16,7 +16,7 @@ caption {
 }
 
 /* 1. if a table is bigger than a content block */
-table {
+.tbl {
     display: inline-block; /* 1 */
     width: 100%;
     max-width: 100%; /* 1 */
@@ -28,7 +28,7 @@ table {
     white-space: nowrap; /* 1 */
 }
 
-caption {
+.tbl caption {
     margin-bottom: var(--indent);
     padding-top: var(--indent);
 
@@ -37,12 +37,12 @@ caption {
     font-size: var(--font-size_XL);
 }
 
-th,
-td {
+.tbl th,
+.tbl td {
     font-size: var(--font-size_S);
 }
 
-thead th {
+.tbl thead th {
     padding-top: var(--indent_x05);
     padding-right: var(--indent_x05);
     padding-bottom: calc(var(--indent_x05) - 1px);
@@ -51,6 +51,6 @@ thead th {
     border-bottom: 1px solid var(--grey);
 }
 
-td {
+.tbl td {
     padding: var(--indent_x05);
 }
