@@ -4,7 +4,8 @@ q {
     margin: 0 0 var(--indent);
     padding: 0 0 0 calc(var(--indent) - 4px);
 
-    font-size: var(--font-size_S);
+    font-size: inherit;
+    font-family: Georgia, serif;
 
     border-left: 4px solid var(--grey);
 
@@ -16,8 +17,9 @@ blockquote > :last-child {
 }
 
 cite {
-    font-size: var(--font-size_S);
+    font-size: var(--font-size_XS);
     vertical-align: top; /* vertical rhythm */
+    font-family: Georgia, serif;
 }
 
 @media (min-width: 860px) {
