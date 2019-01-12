@@ -1,6 +1,6 @@
-ol li::before {
+/* ol li::before {
     -webkit-font-smoothing: antialiased;
-}
+} */
 
 dt {
     -webkit-font-smoothing: antialiased;
