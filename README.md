@@ -1,6 +1,6 @@
 # Bootstrap
 
-Core components [examples](https://petrov.com.ru/p/bootstrap)
+Core components 
 
 ## Instalation
 
